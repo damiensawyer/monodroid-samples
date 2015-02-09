@@ -47,8 +47,9 @@ namespace RecyclerViewSample
 		}
 		public void InitDataSet()
 		{
-			dataSet = new string[60];
-			for (int i = 0; i < 60; i++) {
+			var count = 10000;
+			dataSet = new string[count];
+			for (int i = 0; i < count; i++) {
 				dataSet [i] = "This is element #" + i;
 			}
 		}
