@@ -39,7 +39,6 @@ namespace RecyclerViewSample
 			layoutManager = new LinearLayoutManager (Activity);
 			recyclerView.SetLayoutManager (layoutManager);
 
-
 			adapter = new CustomAdapter (dataSet);
 			// Set CustomAdapter as the adapter for RecycleView
 			recyclerView.SetAdapter (adapter);
