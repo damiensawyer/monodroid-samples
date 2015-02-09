@@ -7,11 +7,11 @@ using Android.Widget;
 using Android.OS;
 using Android.Support.V7.Widget;
 using System.Collections.Generic;
-
+using Android.Support.V7.RecyclerView;
 namespace RecyclerViewer
 {
 	[Activity (Label = "RecyclerViewer", MainLauncher = true, 
-               Icon = "@drawable/icon", Theme = "@android:style/Theme.Material.Light")]
+               Icon = "@drawable/icon", Theme = "@android:style/Theme.DeviceDefault")]
 	public class MainActivity : Activity
 	{
         // Recyclerview instance that will display the photo album:
@@ -36,6 +36,7 @@ namespace RecyclerViewer
             // Create and plug in the built-in (Android-provided) linear layout 
             // manager for the RecyclerView:
 			layoutManager = new LinearLayoutManager (this);
+
             recyclerView.SetLayoutManager (layoutManager);
 
             // Create and plug in my photo album adapter for the RecyclerView:
