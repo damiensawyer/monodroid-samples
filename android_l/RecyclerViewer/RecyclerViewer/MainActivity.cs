@@ -35,7 +35,8 @@ namespace RecyclerViewer
 
             // Create and plug in the built-in (Android-provided) linear layout 
             // manager for the RecyclerView:
-			layoutManager = new LinearLayoutManager (this);
+			layoutManager = new LinearLayoutManager (this, 0, false);
+
 
             recyclerView.SetLayoutManager (layoutManager);
 
